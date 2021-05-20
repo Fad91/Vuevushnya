@@ -1,0 +1,81 @@
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$primary: #353434;
+$primary-light: findLightColor($primary);
+$primary-dark: findDarkColor($primary);
+$primary-invert: findColorInvert($primary);
+$twitter: #4099FF;
+$twitter-invert: findColorInvert($twitter);
+$black: #353434;
+$white: #CAC9C9;
+$link: #CAC9C9;
+$navbar-item-color: #CAC9C9;
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+$colors: mergeColorMaps(("white": ($white,
+            $black,
+        ),
+        "black": ($black,
+            $white,
+        ),
+        "light": ($light,
+            $light-invert,
+        ),
+        "dark": ($dark,
+            $dark-invert,
+        ),
+        "primary": ($primary,
+            $primary-invert,
+            $primary-light,
+            $primary-dark,
+            $white,
+        ),
+        "link": ($link,
+            $link-invert,
+        ),
+    ),
+    $custom-colors);
+
+
+.navbar-menu {
+    margin: 20px 0;
+}
+
+
+.navbar-start {
+    margin-left: 50px;
+}
+
+.navbar-end {
+    margin-right: 50px;
+}
+
+.navbar-item {
+    margin-right: 60px;
+    font-size: 22px;
+    font-weight: 400;
+    align-items: baseline;
+}
+
+.navbar-item span {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.carousel-slide .card {
+    background: transparent;
+    margin:0;
+    margin-right: 20px;
+}
+
+.card .card-image figure {
+    margin-left: 0;
+}
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+@import '~@mdi/font/css/materialdesignicons.css';
