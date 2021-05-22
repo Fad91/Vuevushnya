@@ -10,7 +10,7 @@
       </b-image>
     </div>
     <div class="column">
-      <h1 class="column__title">Lorem ipsum</h1>
+      <h1 class="column__title">VISHNYA VIDEO</h1>
       <p class="column__content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et assumenda
         animi soluta excepturi rem consequuntur illo quaerat laborum natus.
@@ -30,12 +30,23 @@
 }
 
 .column__title {
+  position: relative;
   font-weight: normal;
   font-size: 64px;
   line-height: 82px;
   text-align: center;
   letter-spacing: 5px;
   margin: 50px 0 50px;
+
+  &:after {
+    content: "";
+    width: 320px;
+    height: 2px;
+    position: absolute;
+    top: 117px;
+    left: 29%;
+    background-color: $orange;
+  }
 }
 
 .column__content {
@@ -47,6 +58,6 @@
 }
 
 .column__img {
-    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 </style>

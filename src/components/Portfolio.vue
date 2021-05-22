@@ -94,7 +94,6 @@ export default {
   color: #e0dede;
   box-shadow: none;
   padding: 0 45px;
-  margin-bottom: 20px;
 }
 
 .card-header-icon {

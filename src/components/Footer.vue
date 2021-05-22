@@ -17,8 +17,25 @@
 
 <style lang="scss" scoped>
 .footer {
-  height: 300px;
   color: $white;
   background-color: $black;
+  padding-bottom: 48px;
+}
+
+
+.columns {
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.column a {
+  color: inherit;
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 </style>

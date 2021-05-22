@@ -11,6 +11,8 @@ $black: #353434;
 $white: #CAC9C9;
 $link: #CAC9C9;
 $navbar-item-color: #CAC9C9;
+$fullhd: 1504px;
+$orange: #FC8800;
 
 // Links
 $link: $primary;
@@ -69,13 +71,15 @@ $colors: mergeColorMaps(("white": ($white,
 
 .carousel-slide .card {
     background: transparent;
-    margin:0;
+    margin: 0;
     margin-right: 20px;
 }
 
 .card .card-image figure {
     margin-left: 0;
 }
+
+
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
 @import '~@mdi/font/css/materialdesignicons.css';
